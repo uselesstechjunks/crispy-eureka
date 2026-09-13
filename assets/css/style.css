@@ -1,0 +1,39 @@
+:root {
+  --background: #fff;
+  --foreground: #222;
+  --link: #0645ad;
+  --code-background: #f5f5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111;
+    --foreground: #eee;
+    --link: #8ab4f8;
+    --code-background: #1e1e1e;
+  }
+}
+
+body {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--link);
+}
+
+pre {
+  padding: 16px;
+  overflow-x: auto;
+  background: var(--code-background);
+}
+
+img {
+  max-width: 100%;
+}
