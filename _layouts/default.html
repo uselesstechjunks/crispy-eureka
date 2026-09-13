@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <link rel="stylesheet"
+        href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+
+  <script defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js">
+  </script>
+</head>
+
+<body>
+
+<header>
+  <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+</header>
+
+<main>
+  {{ content }}
+</main>
+
+</body>
+</html>
