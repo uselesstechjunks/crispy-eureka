@@ -1,0 +1,5 @@
+title: Generative Models
+description: Notes on generative modelling
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
